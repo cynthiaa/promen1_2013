@@ -1,25 +1,24 @@
 1;
 
-% Calcula la funcion f1(z) = a * (1 / cosh(z) + cos(z)), donde a = M/m
+% Calcula la funcion f1(z) = a * cos(z) / z, donde a = M/m
 
 function Y = f1(a, Z)
 
-    Y =  a * (1 ./ cosh(Z) + cos(Z));
+    Y =  a * cos(Z) ./ Z;
 
 endfunction
 
 
-% Calcula la funcion f2(z) = z * (sin(z) - cos(z) * tanh(z))
+% Calcula la funcion f2(z) = sin(z)
 
 function Y = f2(Z)
 
-    Y = Z .* (sin(Z) - cos(Z) .* tanh(Z));
+    Y = sin(Z);
 
 endfunction
 
 
-% Calcula la funcion f(z) = a * (1 / cosh(z) + cos(z)) - z * (sin(z) - cos(z) * tanh(z)),
-% donde a = M/m
+% Calcula la funcion f(z) = a * cos(z) / z - sin(z), donde a = M/m
 
 function Y = f(a, Z)
 
