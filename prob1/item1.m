@@ -32,9 +32,8 @@ endfunction
 
 function graficar_item1(a, Z, nombre)
 
-    %plot(Z, f1(a, Z));
-    %plot(Z, f2(Z));
+    plot(Z, f1(a, Z), Z, f2(Z));
 
-    % print(nombre, '-dpng');
+    print(nombre, '-dpng');
 
 endfunction

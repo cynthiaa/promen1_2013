@@ -55,7 +55,7 @@ function ret = crear_tabla(A, Z0, EPS)
             for eps = EPS
 
                 [z n] = metodo_newton(a, z0, eps);
-                ret = [ret transpose([z0 z n])];
+                ret = [ret transpose([z0 z n eps])];
 
             endfor
 
